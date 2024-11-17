@@ -27,10 +27,7 @@ const ZoomCard = styled(Card)(({ theme }) => ({
 }));
 
 const Features = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+  
 
   return (
     <FeatureContainer id="features">

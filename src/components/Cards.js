@@ -9,7 +9,6 @@ const Cards = () => {
 
   const handleArrowClick = (direction) => {
     if (cardsContainerRef.current) {
-      const containerWidth = cardsContainerRef.current.offsetWidth;
       const cardWidth = cardsContainerRef.current.firstChild.offsetWidth;
 
       if (direction === "left") {
