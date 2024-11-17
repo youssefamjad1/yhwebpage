@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography, Card, CardMedia, CardContent } from "@mui/material";
 import { styled } from "@mui/system";
-import { useInView } from "react-intersection-observer";
 import { Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot } from "@mui/lab";
 import { Grid } from '@mui/material';  // Correct import for Grid
 

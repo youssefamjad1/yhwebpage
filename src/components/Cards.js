@@ -23,7 +23,6 @@ const Cards = () => {
   useEffect(() => {
     const scrollInterval = setInterval(() => {
       if (cardsContainerRef.current) {
-        const containerWidth = cardsContainerRef.current.offsetWidth;
         const cardWidth = cardsContainerRef.current.firstChild.offsetWidth;
         const totalScrollWidth = cardWidth * totalCards;
 
