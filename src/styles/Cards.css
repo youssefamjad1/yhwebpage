@@ -1,0 +1,78 @@
+.cards-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  overflow: hidden; /* Hide horizontal scrollbar */
+}
+
+  
+  .cards-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 90%; /* Adjust this to your needs */
+    width: 100%;
+    transition: transform 0.3s ease; /* Smooth scroll effect */
+  }
+  
+  .custom-card {
+    width: 250px; /* Adjust card width as needed */
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .card-header {
+    text-align: center;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-title {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .card-body {
+    margin-top: 1rem;
+  }
+  
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .arrow-button.left {
+    left: 10px;
+  }
+  
+  .arrow-button.right {
+    right: 10px;
+  }
+  
+  .arrow-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  

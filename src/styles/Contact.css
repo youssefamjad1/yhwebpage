@@ -1,0 +1,201 @@
+.contact-container {
+    padding: 20px;
+    background: #e2f7f3; /* Soft water-like background */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Added shadow to contact container */
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out; /* Animation for container fade-in */
+  }
+  
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Animation for scale effect */
+  }
+  
+  .wrapper:hover {
+    transform: scale(1.02); /* Slightly scale up the wrapper on hover */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #3b8d99; /* Nature-inspired color */
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.3s; /* Animation for header fade-in */
+  }
+  
+  .input_field {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 0.6s; /* Fade-in effect for inputs */
+  }
+  
+  .input_field input,
+  .input_field textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for inputs */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .input_field input:focus,
+  .input_field textarea:focus {
+    outline: none;
+    border-color: #007bff; /* Focus border color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Focus shadow effect */
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  .btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn input {
+    background-color: #5ebf93; /* Nature-inspired color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn input:hover {
+    background-color: #4a9c75; /* Slightly darker shade for hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Added shadow on hover */
+  }
+  
+  .social-icons a {
+    color: #007bff;
+    font-size: 2.5rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0056b3;
+    transform: translateY(-5px); /* Hover effect with slight move upwards */
+  }
+  
+  .water-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    transform: rotate(180deg);
+    opacity: 0.6;
+    animation: waveMotion 6s ease-in-out infinite; /* Continuous wave animation */
+  }
+  
+  #success_message {
+    color: #28a745;
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 1s; /* Success message fade-in */
+  }
+  
+  #error_message {
+    color: #dc3545;
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards 1s; /* Error message fade-in */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes waveMotion {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .wrapper {
+      padding: 20px; /* Reduce padding on smaller screens */
+      max-width: 100%; /* Allow wrapper to take full width */
+    }
+  
+    h2 {
+      font-size: 2rem; /* Smaller font size for heading */
+    }
+  
+    .input_field input,
+    .input_field textarea {
+      font-size: 0.9rem; /* Slightly smaller font size for inputs */
+      padding: 10px 12px; /* Adjust input padding */
+    }
+  
+    .btn input {
+      padding: 12px 24px; /* Adjust padding for button */
+      font-size: 1rem; /* Adjust font size */
+    }
+  
+    .social-icons a {
+      font-size: 2rem; /* Reduce icon size */
+    }
+  
+    .water-svg {
+      height: 80px; /* Smaller wave on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container {
+      padding: 10px; /* Reduce overall container padding */
+    }
+  
+    .wrapper {
+      padding: 15px; /* Smaller padding */
+    }
+  
+    h2 {
+      font-size: 1.8rem; /* Further reduce font size */
+    }
+  
+    .input_field input,
+    .input_field textarea {
+      padding: 8px 10px; /* Further reduce input padding */
+    }
+  
+    .btn input {
+      padding: 10px 20px; /* Smaller button padding */
+    }
+  
+    .social-icons a {
+      font-size: 1.8rem; /* Smaller icons */
+    }
+  }
+  
